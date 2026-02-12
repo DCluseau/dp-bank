@@ -9,7 +9,7 @@ public class OperationDAO implements IDAO<OperationModel> {
 	}
 
 	@Override
-	public void create() {
+	public void create(OperationModel operation) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -21,15 +21,22 @@ public class OperationDAO implements IDAO<OperationModel> {
 	}
 
 	@Override
-	public void update() {
+	public void update(OperationModel operation) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void delete() {
+	public void delete(OperationModel operation) {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	public OperationModel findByAccountId(int accountId) {
+		return new OperationModel();
+	}
 
+	public void save(OperationModel operation) {
+		
+	}
 }

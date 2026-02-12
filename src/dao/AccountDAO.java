@@ -20,9 +20,9 @@ public class AccountDAO implements IDAO<AccountModel>{
 	}
 
 	@Override
-	public void create() {
+	public void create(AccountModel account) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -32,18 +32,30 @@ public class AccountDAO implements IDAO<AccountModel>{
 	}
 
 	@Override
-	public void update() {
+	public void update(AccountModel account) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
-	public void delete() {
+	public void delete(AccountModel account) {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
+
 	public AccountModel findById() {
+		// Init method. To be replaced.
+		String type = "";
+		if(type == "check"){
+			CheckModel account = new CheckModel();
+			return account;
+		}else {
+			SavingModel account = new SavingModel();
+			return account;
+		}
+	}
+
+	public AccountModel findByCustomerId(int customer_id) {
 		// Init method. To be replaced.
 		String type = "";
 		if(type == "check"){
