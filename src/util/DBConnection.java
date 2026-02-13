@@ -36,8 +36,4 @@ public class DBConnection {
         }
         return instance;
     }
-
-    public void executeRequest(String sql) {
-        System.out.println("Exécution sur [" + url + "] : " + sql);
-    }
 }
